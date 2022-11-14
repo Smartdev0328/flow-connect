@@ -25,7 +25,7 @@ module.exports = {
     return [
       {
         source: '/:slug*',
-        destination: 'https://zvj2f5v36c65myto2ztqfhsybe0tcrtu.lambda-url.eu-west-2.on.aws/:slug*'
+        destination: 'https://emzm4t9k9g.execute-api.eu-west-2.amazonaws.com/'
       },
     ]
   },
