@@ -140,7 +140,10 @@ export default function Dialog({
             sx={{
               ...styles.body,
               pt: isExpanded ? 0 : styles.body.pt,
-              pb: isExpanded ? 0 : styles.body.pb,
+              pb: isExpanded ? 0
+              
+              
+              : styles.body.pb,
             }}
           >
             {children}

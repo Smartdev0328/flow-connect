@@ -21,11 +21,13 @@ export default function useCurrentUser() {
         body: raw,
         redirect: 'follow'
       };
-      fetch("/aa", requestOptions)
+      fetch("/api", requestOptions)
         .then(response => response.text())
         .then(result => {
-          setRiskScore(JSON.parse(result))
-          
+          console.log(result)
+          const tmpScore = JSON.parse(result).risk_score;
+          const tmpCategory = JSON.parse(result).risk_category.split(".")[1];
+          setRiskScore(tmpScore+tmpCategory)         
         })
         .catch(error => console.log('error', error));
           }

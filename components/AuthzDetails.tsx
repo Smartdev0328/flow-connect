@@ -99,7 +99,7 @@ function AuthzDetails() {
         </AuthzDetailsTable>
         <div sx={styles.codeContainer}>
           <Code title="Arguments" value={JSON.stringify(args, null, 2)} />
-          <Code title="Risk Score" value={JSON.stringify(riskScore.risk_score, null, 2)} />
+          <Code title="Risk Score" value={JSON.stringify(riskScore, null, 2)} />
           <Code title="Script Source Code" value={cadence} />
         </div>
       </div>
